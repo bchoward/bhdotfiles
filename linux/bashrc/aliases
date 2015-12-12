@@ -1,0 +1,6 @@
+
+alias tunl='gcutil ssh --ssh_arg="-L 65434:localhost:5434" --ssh_arg="-L 9200:cluster-es-13-1:9200" --ssh_arg="-L 9300:cluster-es-13-1:9300" --ssh_arg="-L 65433:localhost:5433" --ssh_arg="-L 65432:localhost:5432" --ssh_arg="-L 7001:crawler1:7001" --ssh_arg="-L 8888:localhost:80" --ssh_arg="-Nf" macbeth'
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+alias showtunnels='sudo lsof -i -n | egrep "\<sshd\>" | grep IPv4'
+alias mpst='mvn package -DskipTests'
+

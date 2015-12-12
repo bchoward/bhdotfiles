@@ -1,0 +1,38 @@
+
+set ai
+set backspace=eol,indent,start
+set sm
+set nu
+
+" fix longline behavoir
+":map <Up> gk
+":map <Down> gj
+
+set softtabstop=4
+set shiftwidth=4
+set tabstop=4 
+set expandtab
+
+" set font size
+set guifont=Monaco:h12
+
+" window size
+set lines=40
+set columns=120
+
+
+" don't break words in the middle
+set linebreak
+
+" don't go inserting newlines
+set formatoptions=l 
+"set formatoptions=lanw
+
+
+" show incomplete paragraphs (avoid @)
+set display +=lastline
+
+" syntax
+syntax on
+set background=dark
+colorscheme 256-jungle

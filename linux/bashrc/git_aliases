@@ -1,0 +1,6 @@
+alias gits='git status'
+alias gitpl='git pull'
+alias gitp='git push -u origin'
+alias gitco='git checkout'
+alias gitcleanup='git branch |grep -v "\*\|production\|develop" |  xargs -n 1 git branch -d'
+
