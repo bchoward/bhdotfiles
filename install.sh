@@ -24,7 +24,8 @@ cd ..
 
 
 
-# install common
+# install linux
+# TODO: fix to append bashrc etc
 if [[ "$unamestr" == 'Linux' ]]; then
     cd linux
     for f in * do
