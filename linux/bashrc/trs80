@@ -1,0 +1,6 @@
+to_trs80f() {
+    #tr '\n' '\r' < $1 > $1.do
+    FILENAME=$1
+    tr '\n' '\r' < $1 > ${FILENAME%.*}.do
+}
+alias to_trs80=to_trs80f

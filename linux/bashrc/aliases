@@ -4,3 +4,18 @@ alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 alias showtunnels='sudo lsof -i -n | egrep "\<sshd\>" | grep IPv4'
 alias mpst='mvn package -DskipTests'
 
+rprun() { sudo PATH=$PATH $@ }
+
+
+#alias findpi='sudo nmap -sP 172.18.1.0/24 | awk '\''/^Nmap/{ip=$NF}/00:13:EF:70:13:91/{print ip}'\'
+
+
+#myfunction() {
+#    #do things with parameters like $1 such as
+#        mv $1 $1.bak
+#	    cp $2 $1
+#	    }
+#    alias myname=myfunction
+#   By the way, Bash functions defined in your .bashrc and other files are available 
+#   as commands within your shell. So for instance you can call the earlier function like this
+#   $ myfunction original.conf my.conf
