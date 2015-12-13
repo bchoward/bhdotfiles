@@ -10,8 +10,6 @@ set nu
 
 set softtabstop=4
 set shiftwidth=4
-set tabstop=4 
-set expandtab
 
 " set font size
 set guifont=Monaco:h12
@@ -36,3 +34,4 @@ set display +=lastline
 syntax on
 set background=dark
 colorscheme 256-jungle
+filetype indent plugin on
